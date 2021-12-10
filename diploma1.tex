@@ -1,109 +1,11 @@
 \documentclass[a4paper,landscape]{article} % draft
-\usepackage{wallpaper,lscape}
-\usepackage{niceframe}
-\usepackage{xcolor}
-\usepackage{ulem}
-\usepackage{graphicx}
-\usepackage[]{geometry} % showframe
-\geometry{tmargin=.5cm,bmargin=.5cm,
-lmargin=.5cm,rmargin=.5cm}
-\usepackage{multicol}
-\setlength{\columnseprule}{0.4pt}
-\columnwidth=0.3\textwidth
-\usepackage{fontspec}
-\setmainfont[
-    Path=/usr/share/fonts/opentype/ebgaramond/,
-    ItalicFont=EBGaramond12-Italic.otf
-]{EBGaramond12-Regular.otf}
-%\setmainfont[Path=/home/jj/.local/share/fonts/]{EBGaramond12-Regular.otf}
-%\usepackage{setspace}
-%\setstretch{1}
+\usepackage{diploma}
 
 \begin{document}
-
-%\TileWallPaper{4cm}{2cm}{tiling.png}
-
-%$\fbox{\begin{minipage}[t][5cm][t]{0.333\textwidth}
-%\vspace{\fill}
-%Coucou
-%\vspace{\fill}
-%\end{minipage}}$
-
-\centering
-\scalebox{3}{
-    \color{green!30!black!60}
-    %\textheight-2\fboxsep-2\fboxrule
-    %$\fbox{
-    \begin{minipage}[t][6.3cm][t]{0.333\textwidth}
-        %\vfill
-        \font\border=umrandb
-        \generalframe
-        {\border \char113} % up left
-        {\border \char109} % up
-        {\border \char112} % up right
-        {\border \char108} % left 
-        {\border \char110} % right
-        {\border \char114} % lower left
-        {\border \char111} % bottom
-        {\border \char115} % lower right
-            {%
-            %\vspace{\fill}
-            %\centering
-            %
-            %\begin{minipage}{\textwidth}
-            %\centering
-            %\centering
-            %\end{minipage}
-            %\vspace{-2cm}
-            %\scalebox{0.9}{
-            %$\fbox{
-            \curlyframe[0.92\columnwidth]{
-                %\vspace{\fill}
-                %$\fbox{
-                    \begin{minipage}[t]{0.71\columnwidth}
-                    \centering
-                        \includegraphics[width=3cm]{edm2021.png}
-
-                        \scriptsize
-                        \textcolor{red!10!black!90}{\itshape The Fourteenth International Conference on Educational Data Mining held from June 29 to July 2, 2021 in Cyberspace from Paris (France) is proud to award the}
-
-                    \textcolor{black}{\large \textsc{Best Paper Award}}
-
-                    %\vspace{2mm}
-
-                    \fontsize{6.1}{6.1}\selectfont
-                    to:
-                    \uline{\textcolor{black}
-                      {Samiha Marwan, Yang Shi, Ian Menezes,
-                       Min Chi, Tiffany Barnes, Thomas Price
-                    }}
-
-                    \footnotesize
-                    Just a Few Expert Constraints Can Help: Humanizing Data-Driven Subgoal
-                    Detection for Novice Programming
-
-                    \vspace{5mm}
-                    %\vspace{\fill}
-
-                    {\color{blue!40!black}
-                        \scalebox{.5}{
-                            \begin{tabular}{ccccccc}
-                            \cline{1-1} 
-                            \cline{3-3}
-                            \cline{5-5}
-                            \cline{7-7}
-                            \\
-                            Pr. Shaghayegh Sahebi & & Pr. I-Han Hsiao & & Pr. François Bouchet  & &  Dr. Jill-Jênn Vie\\
-                            University of Albany, NY & & Santa Clara University, CA & & Sorbonne Université, France & & Inria, France \\ 
-                            \end{tabular}
-                        }
-                    }
-                    \end{minipage}%
-                %}$
-            }%}$
-        }%}%
-    \end{minipage}
-    %}$
-}% scalebox
+\TileWallPaper{4cm}{2cm}{tiling.png}
+\diploma
+    {Best Full Paper Award}
+    {Samiha Marwan, Yang Shi, Ian Menezes, Min Chi, Tiffany Barnes, Thomas Price}
+    {Just a Few Expert Constraints Can Help: Humanizing Data-Driven Subgoal Detection for Novice Programming}
+\hfill
 \end{document}
-
