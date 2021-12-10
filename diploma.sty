@@ -1,0 +1,97 @@
+\ProvidesPackage{diploma}
+\RequirePackage{wallpaper,lscape}
+\RequirePackage{niceframe}
+\RequirePackage{xcolor}
+\RequirePackage{ulem}
+\RequirePackage{graphicx}
+\RequirePackage[]{geometry} % showframe
+\geometry{tmargin=.5cm,bmargin=.5cm,
+lmargin=.5cm,rmargin=.5cm}
+\RequirePackage{multicol}
+\setlength{\columnseprule}{0.4pt}
+\columnwidth=0.3\textwidth
+\RequirePackage{fontspec}
+\setmainfont[
+    Path=/usr/share/fonts/opentype/ebgaramond/,
+    ItalicFont=EBGaramond12-Italic.otf
+]{EBGaramond12-Regular.otf}
+%
+\newcommand\diploma[4][]{
+	\hspace{-5mm}
+	\scalebox{3}{%
+    \color{green!30!black!60}
+    %\textheight-2\fboxsep-2\fboxrule
+    %$\fbox{
+    \begin{minipage}[t][6.3cm][t]{0.333\textwidth}
+        %\vfill
+        \font\border=umrandb
+        \generalframe
+        {\border \char113} % up left
+        {\border \char109} % up
+        {\border \char112} % up right
+        {\border \char108} % left 
+        {\border \char110} % right
+        {\border \char114} % lower left
+        {\border \char111} % bottom
+        {\border \char115} % lower right
+            {%
+            %\vspace{\fill}
+            %\centering
+            %
+            %\begin{minipage}{\textwidth}
+            %\centering
+            %\centering
+            %\end{minipage}
+            %\vspace{-2cm}
+            %\scalebox{0.9}{
+            %$\fbox{
+            \curlyframe[0.91\columnwidth]{
+                %\vspace{\fill}
+                %$\fbox{
+                    \begin{minipage}[t]{0.735\columnwidth}
+                    \centering
+                        \includegraphics[width=3cm]{edm2021.png}
+
+                        %\fontsize{6}{6}\selectfont
+                        \scriptsize
+                        \textcolor{red!10!black!90}{\itshape The Fourteenth International Conference on Educational Data Mining held from June 29 to July 2, 2021 in Cyberspace from Paris (France) is proud to award the}
+
+                    \vspace{2mm}
+
+                    \textcolor{black}{\large \textsc{#2}}
+
+                    \vspace{2mm}
+
+                    %\fontsize{6.1}{6.1}\selectfont
+                    \parbox{\linewidth}{\centering to:
+                    \emph{#3}\\
+                    %\uline{#1}\\[1mm]
+
+                    \footnotesize
+                    %\fontsize{8}{8}\selectfont
+                    #4}
+
+                    \vspace{5mm}
+                    %\vspace{\fill}
+
+                    {\color{blue!40!black}
+                        \scalebox{.5}{
+                            \begin{tabular}{ccccccc}
+                            \cline{1-1} 
+                            \cline{3-3}
+                            \cline{5-5}
+                            \cline{7-7}
+                            \\
+                            Pr. Shaghayegh (Sherry) Sahebi & & Pr. I-Han (Sharon) Hsiao & & Pr. François Bouchet  & &  Dr. Jill-Jênn Vie\\
+                            University of Albany, NY & & Santa Clara University, CA & & Sorbonne Université, France & & Inria, France \\ 
+                            \end{tabular}
+                        }
+                    }
+                    \end{minipage}%
+                %}$
+            }%}$
+        }%}%
+    \end{minipage}
+    %}$
+}% scalebox
+}
